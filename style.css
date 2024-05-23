@@ -1,0 +1,125 @@
+.section-1 {
+    margin: 50px auto 50px auto;
+    max-width: 80%;
+}
+
+.section-1 > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+    animation-name: anime2;
+    animation-duration: 0.5s;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes anime2 {
+    /* 0%   {left:0px; top:0px;} */
+    0%  {left:0px; top:20px;}
+    /* 50%  {left:200px; top:200px;} */
+    /* 75%  {left:0px; top:200px;} */
+    100% {left:0px; top:0px;}
+}
+.section-1 > ul > li {
+    list-style: none;
+}
+
+.section-1 > ul > li > a:hover {
+    color: black;
+    background-color: blue;
+    padding: 10px 15px;
+}
+
+.section-1 > ul > li > a {
+    text-decoration: none;
+    color: darkgrey;
+    text-transform: uppercase;
+}
+
+.section-2 {
+    margin: 100px auto 100px auto;
+}
+
+.section-2 > h1 {
+    text-shadow: 5px 5px #ff0000;
+    font-size: 70px;
+    letter-spacing: 10px;
+    color: #ed786a;
+    text-align: center;
+    position: relative;
+    animation-name: anime1;
+    animation-duration: 2s;
+}
+
+@keyframes anime1 {
+    from {left: 200px; top: 0px; }
+    to { left: 0px; top: 0px;}
+}
+
+
+
+.section-2 > p {
+    margin: 30px 0 0 0;
+    color: #978888;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.section-3 {
+    margin: 100px 0 0 0;
+}
+
+.section-3 > h1 {
+    color: #888888;
+    font-size: 30px;
+    letter-spacing: 5px;
+    text-align: center;
+}
+
+.section-4 {
+    max-width: 70%;
+    margin: 50px auto;
+}
+
+.section-4 > img {
+    width: 100%;
+    border: 5px solid #ebebeb;
+}
+
+.section-5 {
+    margin: 50px auto;
+    max-width: 90%;
+}
+
+/* .section-4 {
+    max-width: 70%;
+    margin: 50px auto 50px auto;
+}
+
+
+.section-4 > div {
+    background-image: url('https://html5up.net/uploads/demos/strongly-typed/images/pic04.jpg');
+} */
+
+/* applied when width is 600px or greater */
+@media screen and (min-width: 600px) {
+    /* body {
+        background-color: black;
+    } */
+}
+
+/* applied when width is 600px or smaller */
+@media screen and (max-width: 600px) {
+    .section-1 > ul {
+        flex-direction: column;
+    }
+
+    .section-1 > ul > li {
+        margin: 10px 0;
+    }
+
+    .section-2 > h1 {
+        font-size: 50px;
+    }
+
+}
